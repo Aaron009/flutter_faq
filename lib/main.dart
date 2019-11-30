@@ -20,6 +20,7 @@ import 'package:flutter_app/关闭键盘显示.dart' as Error18;
 import 'package:flutter_app/当UI大小遭到键盘挤压时，使UI不会变小.dart' as Error19;
 import 'package:flutter_app/超长文本显示省略号.dart' as Error20;
 import 'package:flutter_app/测试滚动性能.dart' as Error21;
+import 'package:flutter_app/测试播放在线视频.dart' as Error22;
 
 void main() {
   runApp(MainApp());
@@ -72,6 +73,7 @@ class _ExampleListState extends State<ExampleList> {
           getListTitle('当UI大小遭到键盘挤压时，使UI不会变小', new Error19.MainApp()),
           getListTitle('超长文本显示省略号', new Error20.MainApp()),
           getListTitle('测试滚动性能', new Error21.MainApp()),
+          getListTitle('测试播放在线视频', new Error22.MainApp()),
 
         ],
       ),

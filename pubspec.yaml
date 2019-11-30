@@ -26,6 +26,8 @@ dependencies:
 
   # Toast 库
   fluttertoast:
+  # 播放视频直播库，支持https 支持rtmp
+  gplayer:
 
 dev_dependencies:
   flutter_test:
