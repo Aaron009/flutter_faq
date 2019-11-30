@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/until/StringConst.dart';
 
 void main() {
   runApp(MainApp());
@@ -22,7 +23,7 @@ class SetBackgroundImage extends StatefulWidget {
 class _SetBackgroundImageState extends State<SetBackgroundImage> {
   @override
   Widget build(BuildContext context) {
-    String loadURL = "https://cdn5.vectorstock.com/i/1000x1000/86/34/abstract-dark-mobile-phone-backgrounds-with-flower-vector-9228634.jpg";
+    String loadURL = StringConst.mobile_background;
     return Scaffold(
         appBar: AppBar(
           title: Text('添加背景图'),
@@ -38,13 +39,17 @@ class _SetBackgroundImageState extends State<SetBackgroundImage> {
               ),
               width: double.infinity,
             ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                new Text("Hello background",style: TextStyle(color: Colors.green, fontSize: 50),),
-              ],
-            ),
+            SizedBox(
+              width: double.infinity,
+              height: double.infinity,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  new Text("Hello background",style: TextStyle(color: Colors.green, fontSize: 50),),
+                ],
+              ),
+            )
           ],
         ));
   }

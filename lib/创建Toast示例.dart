@@ -9,19 +9,24 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Home(),
+      home: Home(),
     );
   }
 }
 
 class Home extends StatelessWidget {
-  const Home({
+  final _scaffoldKey = GlobalKey<ScaffoldState>(); // 通过Key获取到组件
+
+  Home({
     Key key,
   }) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
+
       appBar: AppBar(
         title: const Text('Snack bar'),
       ),
@@ -46,6 +51,13 @@ class Home extends StatelessWidget {
                   timeInSecForIos: 1
               ),
             ),
+
+            RaisedButton(
+              color: Colors.pink,
+              textColor: Colors.white,
+              onPressed: () => _displaySnackBar(context),
+              child: Text('通过Globay Key获取到Scaffold'),
+            ),
           ],
         )
       )
@@ -61,5 +73,11 @@ class Home extends StatelessWidget {
             label: 'UNDO', onPressed: scaffold.hideCurrentSnackBar),
       ),
     );
+  }
+
+  _displaySnackBar(BuildContext context) {
+    final scaffold = _scaffoldKey.currentState;
+    final snackBar = SnackBar(content: Text('Are you talkin\' to me?'));
+    scaffold.showSnackBar(snackBar);
   }
 }

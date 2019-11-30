@@ -13,6 +13,7 @@ import 'package:flutter_app/Hero测试2.dart' as Error11;
 import 'package:flutter_app/子组件匹配父组件大小.dart' as Error12;
 import 'package:flutter_app/导航控制返回时移除返回按钮.dart' as Error13;
 import 'package:flutter_app/创建Toast示例.dart' as Error14;
+import 'package:flutter_app/磨砂效果frosted glass.dart' as Error15;
 
 void main() {
   runApp(MainApp());
@@ -57,6 +58,7 @@ class _ExampleListState extends State<ExampleList> {
           getListTitle('子组件匹配父组件大小', new Error12.MainApp()),
           getListTitle('导航控制返回时移除返回按钮', new Error13.MainApp()),
           getListTitle('创建Toast示例', new Error14.MainApp()),
+          getListTitle('磨砂效果frosted glass', new Error15.MainApp()),
 
         ],
       ),

@@ -43,7 +43,6 @@ class SecondPage extends StatelessWidget {
         child: new Icon(Icons.fullscreen_exit),
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => ThirdPage()));
-
         },
       ),
     );
@@ -58,7 +57,14 @@ class ThirdPage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.language),
         onPressed: () {
-          Navigator.pushReplacementNamed(context, "/logout"); //前面所有的路由，全部消失
+//          Navigator.pushReplacementNamed(context, "/logout"); //替换上一个
+
+          Navigator.pushNamedAndRemoveUntil(context, '/logout', (Route <dynamic> route) {
+            print(route);
+            return false;
+          });
+
+//          Navigator.pushNamedAndRemoveUntil(context, '/logout', ModalRoute.withName('xx'));
         }
       ),
     );

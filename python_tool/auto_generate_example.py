@@ -11,11 +11,14 @@ if __name__ == '__main__':
     example_files = []
     main_folder = "lib/"
     for root, dirs, files in os.walk(main_folder):
+        if root != main_folder:
+            continue
         for f in files:
+            f = f.decode('GB2312').encode("utf-8")
             c = os.path.splitext(f)
             if (c[1] == '.dart'):
                 if (c[0] != 'main'):
-                    example_files.append(c[0].decode('GB2312').encode("utf-8"))
+                    example_files.append(c[0])
 
     main_path = main_folder + "main.dart"
     with open(main_path, mode='r') as f:
