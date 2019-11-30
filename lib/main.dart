@@ -14,6 +14,8 @@ import 'package:flutter_app/子组件匹配父组件大小.dart' as Error12;
 import 'package:flutter_app/导航控制返回时移除返回按钮.dart' as Error13;
 import 'package:flutter_app/创建Toast示例.dart' as Error14;
 import 'package:flutter_app/磨砂效果frosted glass.dart' as Error15;
+import 'package:flutter_app/圆形进度条改变颜色.dart' as Error16;
+import 'package:flutter_app/如何防止重新build.dart' as Error17;
 
 void main() {
   runApp(MainApp());
@@ -42,6 +44,7 @@ class _ExampleListState extends State<ExampleList> {
         title: Text('所有示例列表'),
       ),
       body: ListView(
+        reverse: true,
         children: <Widget>[
 
           getListTitle('九宫格图缩放示例', new Error1.MainApp()),
@@ -59,6 +62,8 @@ class _ExampleListState extends State<ExampleList> {
           getListTitle('导航控制返回时移除返回按钮', new Error13.MainApp()),
           getListTitle('创建Toast示例', new Error14.MainApp()),
           getListTitle('磨砂效果frosted glass', new Error15.MainApp()),
+          getListTitle('圆形进度条改变颜色', new Error16.MainApp()),
+          getListTitle('如何防止重新build', new Error17.MainApp()),
 
         ],
       ),
