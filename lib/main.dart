@@ -16,6 +16,10 @@ import 'package:flutter_app/创建Toast示例.dart' as Error14;
 import 'package:flutter_app/磨砂效果frosted glass.dart' as Error15;
 import 'package:flutter_app/圆形进度条改变颜色.dart' as Error16;
 import 'package:flutter_app/如何防止重新build.dart' as Error17;
+import 'package:flutter_app/关闭键盘显示.dart' as Error18;
+import 'package:flutter_app/当UI大小遭到键盘挤压时，使UI不会变小.dart' as Error19;
+import 'package:flutter_app/超长文本显示省略号.dart' as Error20;
+import 'package:flutter_app/测试滚动性能.dart' as Error21;
 
 void main() {
   runApp(MainApp());
@@ -64,6 +68,10 @@ class _ExampleListState extends State<ExampleList> {
           getListTitle('磨砂效果frosted glass', new Error15.MainApp()),
           getListTitle('圆形进度条改变颜色', new Error16.MainApp()),
           getListTitle('如何防止重新build', new Error17.MainApp()),
+          getListTitle('关闭键盘显示', new Error18.MainApp()),
+          getListTitle('当UI大小遭到键盘挤压时，使UI不会变小', new Error19.MainApp()),
+          getListTitle('超长文本显示省略号', new Error20.MainApp()),
+          getListTitle('测试滚动性能', new Error21.MainApp()),
 
         ],
       ),

@@ -35,7 +35,7 @@ class _ReBuilderState extends State<ReBuilder> {
     });
   }
 
-  final MyWidgetClass finalWidget = MyWidgetClass(key: Key('final'));
+  final MyWidgetClass finalWidget = MyWidgetClass(key: Key('final')); // 据说此方法不推荐，原因不详
 
   @override
   Widget build(BuildContext context) {
