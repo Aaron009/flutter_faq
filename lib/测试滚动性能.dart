@@ -34,11 +34,16 @@ class _TestListState extends State<TestList> {
           itemBuilder: (context, index) {
               return Stack(
                 children: <Widget>[
-                  Image.network("https://dummyimage.com/"
-                      + size.width.toInt().toString() + "x200/"
-                      + toHex(randomColor(), leadingHashSign: false)+ "/fff"),
+//                  Image.network("https://dummyimage.com/"
+//                      + size.width.toInt().toString() + "x200/"
+//                      + toHex(randomColor(), leadingHashSign: false)+ "/fff"),
 
-                  Text('测试文本', style: TextStyle(fontSize: 20, color: Colors.white),),
+                  Container(
+                    width: size.width.toInt().toDouble(),
+                    height: 200,
+                    color: randomColor(),
+                    child: Text('测试文本', style: TextStyle(fontSize: 20, color: Colors.white),),
+                  ),
                 ],
               );
           }),
