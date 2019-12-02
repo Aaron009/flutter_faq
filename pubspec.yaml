@@ -28,6 +28,8 @@ dependencies:
   fluttertoast:
   # 播放视频直播库，支持https 支持rtmp
   gplayer:
+  # 屏幕适配
+  flutter_screenutil:
 
 dev_dependencies:
   flutter_test:
