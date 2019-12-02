@@ -26,6 +26,9 @@ import 'package:flutter_app/创建只能输入数字的文本框.dart' as Error2
 import 'package:flutter_app/富文本示例.dart' as Error25;
 import 'package:flutter_app/屏幕适配.dart' as Error26;
 import 'package:flutter_app/测试网络加载.dart' as Error27;
+import 'package:flutter_app/处理返回键.dart' as Error28;
+import 'package:flutter_app/判断是调试还是发布模式.dart' as Error29;
+import 'package:flutter_app/保持App竖屏显示.dart' as Error30;
 
 void main() {
   runApp(MainApp());
@@ -84,6 +87,9 @@ class _ExampleListState extends State<ExampleList> {
           getListTitle('富文本示例', new Error25.MainApp()),
           getListTitle('屏幕适配', new Error26.MainApp()),
           getListTitle('测试网络加载', new Error27.MainApp()),
+          getListTitle('处理返回键', new Error28.MainApp()),
+          getListTitle('判断是调试还是发布模式', new Error29.MainApp()),
+          getListTitle('保持App竖屏显示', new Error30.MainApp()),
 
         ],
       ),

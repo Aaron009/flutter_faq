@@ -40,6 +40,8 @@ class _ReBuilderState extends State<ReBuilder> {
   @override
   Widget build(BuildContext context) {
     // https://stackoverflow.com/questions/52249578/how-to-deal-with-unwanted-widget-build/52249579?r=SearchResults&s=31|0.0000#52249579
+    // 有关使用函数 和 类 创建Widget
+    // https://stackoverflow.com/questions/53234825/what-is-the-difference-between-functions-and-classes-to-create-widgets/53234826#53234826
     return Scaffold(
       appBar: AppBar(
         title: Text('防止重新Builder'),
@@ -48,6 +50,7 @@ class _ReBuilderState extends State<ReBuilder> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
+
 
             // 避免网络请求，每次重新Build时，重新请求
             FutureBuilder(
